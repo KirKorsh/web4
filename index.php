@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   }
   if ($errors['check-1']) {
     setcookie('check_error', '', 100000);
-    $messages[] = '<div class="error">Вы должны болеть за Red Bull Racing.</div>';
+    $messages[] = '<div class="error">Вы должны согласиться.</div>';
   }
   
   // Складываем предыдущие значения полей в массив, если есть.
