@@ -96,8 +96,8 @@ if (!empty($messages)) {
       <label> <input type="radio" name="radio-1" value="man" 
 	<?php if($values['radio-1']=="man") {print 'checked';} ?> />
         Мужской </label>
-      <label><input type="radio" name="radio-1" value="woman" 
-	<?php if($values['radio-1']=="woman") {print 'checked';} ?> />
+      <label><input type="radio" name="radio-1" value="female" 
+	<?php if($values['radio-1']=="female") {print 'checked';} ?> />
         Женский</label><br />
      </div>
 		
