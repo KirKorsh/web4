@@ -1,6 +1,5 @@
 <style>
 #content, header div{
-    background-color: rgba(123, 0, 212, 0.1);
     max-width: 960px;
     margin: 0 auto;
 }

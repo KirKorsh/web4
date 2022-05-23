@@ -57,7 +57,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
   }
   if ($errors['check-1']) {
     setcookie('check_error', '', 100000);
-    $messages[] = '<div class="error">Вы должны согласиться.</div>';
+    $messages[] = '<div class="error">Вы должны болеть за Red Bull Racing.</div>';
   }
   
   // Складываем предыдущие значения полей в массив, если есть.
@@ -211,7 +211,7 @@ else {
   // Сохранение в БД.
 $user = 'u47577';
 $pass = '9303559';
-  $db = new PDO('mysql:host=localhost;dbname=u47577', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $db = new PDO('mysql:host=localhost;dbname=u41028', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
    try {
     $stmt = $db->prepare("INSERT INTO application SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio");
     $stmt->bindParam(':name', $name);
