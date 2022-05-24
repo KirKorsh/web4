@@ -61,15 +61,15 @@ if (!empty($messages)) {
 
       <label>
         Имя:<br />
-        <input type="text" name="field-name" placeholder="Name" <?php if ($errors['field-name']) {print 'class="error"';} ?>
-          value="<?php print $values['field-name']; ?>" />
+        <input type="text" name="name" placeholder="Name" <?php if ($errors['name']) {print 'class="error"';} ?>
+          value="<?php print $values['name']; ?>" />
       </label><br />
 
       <label>
         Еmail:<br />
-        <input name="field-email" type="email" placeholder="Email"
-          value="<?php print $values['field-email']; ?>"
-	<?php if ($errors['field-email']) {print 'class="error"';} ?>
+        <input name="email" type="email" placeholder="Email"
+          value="<?php print $values['email']; ?>"
+	<?php if ($errors['email']) {print 'class="error"';} ?>
 	/>
       </label><br />
 
@@ -119,8 +119,8 @@ if (!empty($messages)) {
 	  <label>
         Сверхспособности:
         <br />
-        <select name="field-super[]" multiple="multiple"
-	  <?php if ($errors['field-super']) {print 'class="error"';} ?> >
+        <select name="super[]" multiple="multiple"
+	  <?php if ($errors['super']) {print 'class="error"';} ?> >
           <option value="fly" <?php if($values['fly']==1){print 'selected';} ?> > Летать</option>
           <option value="sleep" <?php if ($values['sleep']==1){print 'selected';} ?> > Спать</option>
           <option value="run" <?php if ($values['run']==1){print 'selected';} ?> > Бегать</option>
@@ -129,7 +129,7 @@ if (!empty($messages)) {
 	  
       <label>
         Дополнительное описание:<br />
-        <textarea name="field-bio" placeholder="Write something pls"> <?php print $values['field-bio']; ?> </textarea>
+        <textarea name="bio" placeholder="Write something pls"> <?php print $values['bio']; ?> </textarea>
       </label><br />
       <div <?php if ($errors['check-1']) {print 'class="error"';} ?> >
       <label><input type="check-1" name="check-1"
