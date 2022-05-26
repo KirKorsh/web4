@@ -211,7 +211,7 @@ else {
   // Сохранение в БД.
 $user = 'u47577';
 $pass = '9303559';
-  $db = new PDO('mysql:host=localhost;dbname=u41028', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
+  $db = new PDO('mysql:host=localhost;dbname=u47577', $user, $pass, array(PDO::ATTR_PERSISTENT => true));
    try {
     $stmt = $db->prepare("INSERT INTO application SET name=:name, email=:email, year=:byear, pol=:pol, limbs=:limbs, bio=:bio");
     $stmt->bindParam(':name', $name);
