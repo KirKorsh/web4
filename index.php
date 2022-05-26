@@ -205,7 +205,7 @@ else {
   $birth_year = $_POST['year'];
   $pol = $_POST['radio-1'];
   $limbs = intval($_POST['radio-2']);
-  $superruns = $_POST['super'];
+  $superpowers = $_POST['super'];
   $bio= $_POST['bio'];
 
   // Сохранение в БД.
@@ -228,7 +228,7 @@ $pass = '9303559';
     $id = $db->lastInsertId();
     $sppe= $db->prepare("INSERT INTO super SET name=:name, per_id=:person");
     $sppe->bindParam(':person', $id);
-    foreach($superruns as $inserting){
+    foreach($superpowers as $inserting){
   	$sppe->bindParam(':name', $inserting);
   	if($sppe->execute()==false){
 	    print_r($sppe->errorCode());
