@@ -132,7 +132,7 @@ if (!empty($messages)) {
         <textarea name="bio" placeholder="Write something pls"> <?php print $values['bio']; ?> </textarea>
       </label><br />
       <div <?php if ($errors['check-1']) {print 'class="error"';} ?> >
-      <label><input type="check-1" name="check-1"
+      <label><input type="checkbox" name="check-1"
 	<?php if($values['check-1']==TRUE){print 'checked';} ?> />
         Разрешение на использование личной информации дал(а)</label><br />
       </div>
