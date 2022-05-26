@@ -131,6 +131,7 @@ if (!empty($messages)) {
         Дополнительное описание:<br />
         <textarea name="bio" placeholder="Write something pls"> <?php print $values['bio']; ?> </textarea>
       </label><br />
+	  
       <div <?php if ($errors['check-1']) {print 'class="error"';} ?> >
       <label><input type="checkbox" name="check-1"
 	<?php if($values['check-1']==TRUE){print 'checked';} ?> />
