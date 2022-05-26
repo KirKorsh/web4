@@ -174,7 +174,7 @@ else {
   }
   
   if(!isset($_POST['check-1'])){
-    setcookie('check_error','1',time()+  n24 * 60 * 60);
+    setcookie('check_error','1',time()+  24 * 60 * 60);
     setcookie('check_value', '', 100000);
     $errors=TRUE;
   }
